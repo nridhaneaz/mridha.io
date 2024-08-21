@@ -176,8 +176,8 @@ body {
 }
 
 .responsive {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     border-top-left-radius: 251px;
     border-top-right-radius: 251px;
     border-bottom-left-radius: 251px;
@@ -353,27 +353,25 @@ body {
 }
 
 .progress-line.html span {
-    width: 90%;
-}
-
-.progress-line.css span {
-    width: 80%;
-}
-.progress-line.Php span {
-    width: 60%;
-}
-
-.progress-line.python span {
-    width: 75%;
-}
-.progress-line.Php span {
-    width: 60%;
-}
-
-.progress-line.java span {
     width: 50%;
 }
 
+.progress-line.css span {
+    width: 50%;
+}
+
+.progress-line.python span {
+    width: 35%;
+}
+
+
+
+.progress-line.java span {
+    width: 30%;
+}
+.progress-line.Php span {
+    width: 30%;
+}
 .progress-line.cpls span {
     width: 50%;
 }
@@ -392,22 +390,24 @@ body {
 }
 
 .progress-line.html span::after {
-    content: "90%";
+    content: "50%";
 }
 
 .progress-line.css span::after {
-    content: "80%";
+    content: "50%";
 }
 
 .progress-line.python span::after {
-    content: "75%";
+    content: "35%";
 }
 
 
 .progress-line.java span::after {
-    content: "60%";
+    content: "30%";
 }
-
+.progress-line.php span::after {
+    content: "30%";
+}
 .progress-line.cpls span::after {
     content: "50%";
 }
@@ -472,6 +472,7 @@ body {
 
 .path.path-1 {
     animation: animate-path1 1s 1s linear forwards;
+    
 }
 
 .path.path-2 {
@@ -485,6 +486,7 @@ body {
 .path.path-4 {
     animation: animate-path4 1s 1s linear forwards;
 }
+
 
 .radial-bar .percentage {
     position: absolute;
@@ -1047,16 +1049,19 @@ body {
         margin-left: 0px;
     }
     .bar .info .addhtml::before{
-        content: "90%";
+        content: "30%";
     }
     .bar .info .addcss::before{
-        content: "80%";
+        content: "50%";
     }
     .bar .info .addpy::before{
-        content: "75%";
+        content: "35%";
     }
     .bar .info .addjava::before{
         content: "50%";
+    }
+    .bar .info .addphp::before{
+        content: "30%";
     }
     .bar .info .addc::before{
         content: "50%";
@@ -1216,19 +1221,19 @@ body {
         left: 25%;
     }
     .bar .info .addhtml::before{
-        content: "90%";
+        content: "100%";
     }
     .bar .info .addcss::before{
-        content: "80%";
+        content: "100%";
     }
     .bar .info .addpy::before{
-        content: "75%";
+        content: "100%";
     }
     .bar .info .addjava::before{
-        content: "50%";
+        content: "100%";
     }
     .bar .info .addc::before{
-        content: "50%";
+        content: "100%";
     }
 
     /*project*/
@@ -1261,12 +1266,12 @@ body {
     }
     
     .top{
-        position: fixed;
+        position: relative;
         bottom: 2rem;
         left: 1rem;
         display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        align-items: relative;
+        justify-content: relative ;
         text-decoration: none;
         opacity: 0;
         transition: all .4s;
