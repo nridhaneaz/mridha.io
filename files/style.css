@@ -363,9 +363,6 @@ body {
 .progress-line.python span {
     width: 35%;
 }
-
-
-
 .progress-line.java span {
     width: 30%;
 }
@@ -400,7 +397,6 @@ body {
 .progress-line.python span::after {
     content: "35%";
 }
-
 
 .progress-line.java span::after {
     content: "30%";
@@ -826,19 +822,19 @@ body {
 
 @keyframes animate-path1 {
     100% {
-        stroke-dashoffset: 180;
+        stroke-dashoffset: 351;
     }
 }
 
 @keyframes animate-path2 {
     100% {
-        stroke-dashoffset: 180;
+        stroke-dashoffset: 251;
     }
 }
 
 @keyframes animate-path3 {
     100% {
-        stroke-dashoffset: 120;
+        stroke-dashoffset: 200;
     }
 }
 
@@ -1232,6 +1228,9 @@ body {
     .bar .info .addjava::before{
         content: "100%";
     }
+    .bar .info .addphp::before{
+        content: "100%";
+    }
     .bar .info .addc::before{
         content: "100%";
     }
@@ -1241,7 +1240,7 @@ body {
         padding-top: 20px;
         margin-top: 10px;
         padding-bottom: 50px;
-    }
+    }                                                              
     .main-text h2 {
         font-size: 50px;
         padding-bottom: 15px;
